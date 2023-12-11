@@ -1,9 +1,10 @@
 // Header.js
 import React from 'react';
 import SearchForm from '../../molecules/SearchForm/SearchForm';
+import styles from './Header.module.css';
 
 const Header = ({ onSearchSubmit }) => (
-  <header>
+  <header className={styles.header} style={{ color: 'var(--primary-color)', backgroundColor: 'var(--background-color)' }}>
     <h1>My Website</h1>
     <SearchForm onSubmit={onSearchSubmit} />
   </header>

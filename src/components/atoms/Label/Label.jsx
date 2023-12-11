@@ -1,6 +1,7 @@
 import React from 'react';
+import styles from './Label.module.css';
 
 const Label = ({ htmlFor, children }) => (
-  <label htmlFor={htmlFor}>{children}</label>
+  <label className={styles.label} htmlFor={htmlFor}>{children}</label>
 );
 export default Label;

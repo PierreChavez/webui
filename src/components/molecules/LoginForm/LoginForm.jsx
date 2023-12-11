@@ -1,7 +1,8 @@
 import React from 'react';
-import Button from './atoms/Button';
-import Input from './atoms/Input';
-import Label from './atoms/Label';
+import Button from '../../atoms/Button/Button';
+import Input from '../../atoms/Input/Input';
+import Label from '../../atoms/Label/Label';
+import styles from './LoginForm.module.css';
 
 const LoginForm = ({ onSubmit }) => {
   const [username, setUsername] = React.useState('');
@@ -13,7 +14,7 @@ const LoginForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.loginForm}>
       <Label htmlFor="username">Username:</Label>
       <Input
         type="text"

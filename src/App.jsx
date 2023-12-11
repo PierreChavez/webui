@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HomePage from './pages/HomePage/HomePage';
+import ThemeSwitcher from './themes/ThemeSwitcher';
+import './themes/themes.module.css';
+
 
 const handleSearchSubmit = (searchTerm) => {
   console.log(`Search submit: ${searchTerm}`);
 };
 
+
 function App() {
+
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  const handleToggle = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <div className="App">
+            <ThemeSwitcher theme={theme} onToggle={handleToggle} />
       <HomePage onSearchSubmit={handleSearchSubmit} />
     </div>
   );
