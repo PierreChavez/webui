@@ -14,7 +14,7 @@ const SearchForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.searchForm} style={{ color: 'var(--primary-color)', backgroundColor: 'var(--background-color)' }}>
+    <form onSubmit={handleSubmit} className={styles.searchForm} style={{ color: 'var(--primary-color)', backgroundColor: 'var(--secondary-color)' }}>
       <Label htmlFor="search">Search:</Label>
       <Input
         type="text"

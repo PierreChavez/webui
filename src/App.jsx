@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App fullHeight" style={{ color: 'var(--primary-color)', backgroundColor: 'var(--background-color)' }}>
             <ThemeSwitcher theme={theme} onToggle={handleToggle} />
       <HomePage onSearchSubmit={handleSearchSubmit} />
     </div>

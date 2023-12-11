@@ -1,0 +1,13 @@
+.Card {
+    /* Add your styles here */
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+
+.Card .CardBody {
+   padding: 10px;
+}

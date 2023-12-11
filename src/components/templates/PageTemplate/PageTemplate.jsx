@@ -6,7 +6,6 @@ import styles from './PageTemplate.module.css';
 const PageTemplate = ({ onSearchSubmit, children }) => (
   <div className={styles.pageTemplate} style={{ color: 'var(--primary-color)', backgroundColor: 'var(--background-color)' }}>
     <Header onSearchSubmit={onSearchSubmit} />
-    <LoginModal/>
     <main>{children}</main>
   </div>
 );
