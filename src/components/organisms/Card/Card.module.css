@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+div.Card > div {
+    border-bottom: 1px solid #ddd;
+}
+
 
 .Card .CardBody {
    padding: 10px;
