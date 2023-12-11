@@ -4,7 +4,7 @@ import Text from '../../atoms/Text/Text';
 import CardHeader from '../../molecules/CardHeader/CardHeader';
 
 const Card = ({ title, thumbnail, children }) => (
-  <div className={styles.Card} style={{ color: 'var(--primary-color)', backgroundColor: 'var(--secondary-color)' }}>
+  <div className={styles.Card} style={{ color: 'var(--primary-color)', backgroundColor: 'var(--secondary-color)', borderColor: 'var(--border-color)' }}>
     {(title || thumbnail) && <CardHeader title={title} thumbnail={thumbnail} />}
     <div className={styles.CardBody}>
       {children}

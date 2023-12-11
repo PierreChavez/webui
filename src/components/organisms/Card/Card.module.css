@@ -1,14 +1,14 @@
 .Card {
     /* Add your styles here */
     width: 300px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
 
 div.Card > div {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
 }
 
 

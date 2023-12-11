@@ -1,11 +1,14 @@
 :root {
     --primary-color: black;
-    --background-color: white;
+    --background-color: #F4F2F7;
+    --secondary-color: #FAF9FB;
+    --border-color: #CBC2D9;
+
 }
 
 [data-theme="dark"] {
     --primary-color: white;
     --background-color: #1A1825;
     --secondary-color: #251F33;
-    --border-color: gray;
+    --border-color: #3A3350;
 }
