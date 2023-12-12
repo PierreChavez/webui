@@ -12,18 +12,21 @@ const handleSearchSubmit = (searchTerm) => {
 function App() {
 
   const [theme, setTheme] = useState('light');
+  const [isChecked, setIsChecked] = useState(false);
+
 
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);
   }, [theme]);
 
-  const handleToggle = () => {
+  const handleToggle = (checked) => {
     setTheme(theme === 'light' ? 'dark' : 'light');
+    setIsChecked(checked);
   };
 
   return (
     <div className="App fullHeight" style={{ color: 'var(--primary-color)', backgroundColor: 'var(--background-color)' }}>
-            <ThemeSwitcher theme={theme} onToggle={handleToggle} />
+      <ThemeSwitcher theme={theme} onToggle={handleToggle} />
       <HomePage onSearchSubmit={handleSearchSubmit} />
     </div>
   );

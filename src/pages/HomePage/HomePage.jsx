@@ -1,9 +1,10 @@
 import React from 'react';
+import Button from '../../components/atoms/Button/Button';
+import Input from '../../components/atoms/Input/Input';
+import ToggleSwitch from '../../components/atoms/ToggleSwitch/ToggleSwitch';
+import Card from '../../components/organisms/Card/Card';
 import PageTemplate from '../../components/templates/PageTemplate/PageTemplate';
 import styles from './HomePage.module.css';
-import Card from '../../components/organisms/Card/Card';
-import LoginModal from '../../components/organisms/LoginModal/LoginModal';
-import Button from '../../components/atoms/Button/Button';
 
 const HomePage = ({ onSearchSubmit, children }) => (
   <div className={styles.homePage}>
@@ -13,6 +14,8 @@ const HomePage = ({ onSearchSubmit, children }) => (
       <Card title="Title">
         <p>Card Content</p>
         <Button>Click Me</Button>
+        <Input placeholder='Search'/>
+        <ToggleSwitch />
 
       </Card>
     </PageTemplate>

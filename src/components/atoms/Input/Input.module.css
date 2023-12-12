@@ -1,6 +1,31 @@
 .input {
     padding: 10px;
     border: 1px solid;
-    border-color: gray ;
+    color: var(--primary-color);
+    background-color: var(--secondary-light-color);
+    border-color: var(--border-color);
     border-radius: 5px;
+}
+
+
+.input:hover {
+    border: 1px solid var(--emphasis-color);
+}
+
+
+.input:focus {
+    outline-width: 0;
+    border: 1px solid var(--emphasis-color);
+}
+
+
+.input::placeholder {
+    color: var(--primary-color);
+    opacity: 1;
+    /* Firefox */
+}
+
+.input::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: var(--primary-color);
 }

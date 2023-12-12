@@ -1,9 +1,14 @@
+* {
+    margin: 0;
+}
+
 :root {
     --primary-color: black;
     --background-color: #F4F2F7;
     --secondary-color: #FAF9FB;
     --border-color: #CBC2D9;
-    --button-color: #E4E0EB;
+    --secondary-light-color: #E4E0EB;
+    --emphasis-color: #FA1D4E;
 
 }
 
@@ -11,7 +16,7 @@
     --primary-color: white;
     --background-color: #121019;
     --secondary-color: #251F33;
-    --border-color: #3A3350;
+    --secondary-light-color: #3A3350;
     --button-color: #2D283E;
 
 }
