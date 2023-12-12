@@ -5,6 +5,8 @@ import ToggleSwitch from '../../components/atoms/ToggleSwitch/ToggleSwitch';
 import Card from '../../components/organisms/Card/Card';
 import PageTemplate from '../../components/templates/PageTemplate/PageTemplate';
 import styles from './HomePage.module.css';
+import Link from '../../components/atoms/Link/Link';
+import Radio from '../../components/atoms/Radio/Radio';
 
 const HomePage = ({ onSearchSubmit, children }) => (
   <div className={styles.homePage}>
@@ -16,7 +18,8 @@ const HomePage = ({ onSearchSubmit, children }) => (
         <Button>Click Me</Button>
         <Input placeholder='Search'/>
         <ToggleSwitch />
-
+        <Link href="https://www.google.com">Google</Link>
+        <Radio name="radio" value="radio1">Radio 1</Radio>
       </Card>
     </PageTemplate>
   </div>

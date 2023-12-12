@@ -1,0 +1,12 @@
+.Radio {
+    margin: 0 10px;
+}
+
+.Radio input {
+    margin-right: 5px;
+    accent-color: var(--emphasis-color);
+    border: 2px solid var(--secondary-color);
+    width: 1rem;
+    height: 1rem;
+
+}

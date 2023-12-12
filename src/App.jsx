@@ -16,17 +16,19 @@ function App() {
 
 
   useEffect(() => {
+    handleToggle(isChecked);
     document.body.setAttribute('data-theme', theme);
-  }, [theme]);
+    console.log(`Theme switched to ${theme}`);
+  }, [theme, isChecked]);
 
   const handleToggle = (checked) => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme(checked ? 'dark' : 'light');
     setIsChecked(checked);
   };
 
   return (
     <div className="App fullHeight" style={{ color: 'var(--primary-color)', backgroundColor: 'var(--background-color)' }}>
-      <ThemeSwitcher theme={theme} onToggle={handleToggle} />
+      <ThemeSwitcher isChecked={isChecked} theme={theme} onToggle={handleToggle} />
       <HomePage onSearchSubmit={handleSearchSubmit} />
     </div>
   );

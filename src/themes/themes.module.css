@@ -8,7 +8,8 @@
     --secondary-color: #FAF9FB;
     --border-color: #CBC2D9;
     --secondary-light-color: #E4E0EB;
-    --emphasis-color: #FA1D4E;
+    --emphasis-color-rgb: 250, 29, 78;
+    --emphasis-color: rgb(var(--emphasis-color-rgb));
 
 }
 

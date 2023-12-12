@@ -1,0 +1,9 @@
+.Link {
+    color: var(--emphasis-color);
+    padding: 1px 4px;
+    border-radius: 2px;
+}
+
+.Link:hover {
+    background-color: rgba(var(--emphasis-color-rgb), 0.35);
+}
