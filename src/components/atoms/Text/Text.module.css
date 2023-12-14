@@ -1,3 +1,33 @@
 .Text {
  /* Add your styles here */
 }
+
+.Default {
+    /* styles for Default type */
+  }
+  
+  .Primary {
+    /* styles for Primary type */
+    color: blue;
+  }
+
+
+.Success {
+    /* styles for Success type */
+    color: green;
+  }
+  
+  .Info {
+    /* styles for Info type */
+    color: cyan;
+  }
+  
+  .Warning {
+    /* styles for Warning type */
+    color: orange;
+  }
+  
+  .Danger {
+    /* styles for Danger type */
+    color: red;
+  }

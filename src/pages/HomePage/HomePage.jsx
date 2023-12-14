@@ -15,25 +15,17 @@ const HomePage = ({ onSearchSubmit, children }) => (
     <PageTemplate onSearchSubmit={onSearchSubmit}>
       <h2>Welcome to our website!</h2>
       <p>This is the home page.</p>
-      <Stack gap="1rem" direction="row" wrap fill spacer="|" alignItems='center'>
-        <Text>Hola</Text>
+      <Stack gap="2rem" wrap fill spacer="|" alignItems='center'>
+        <Text type='Primary' style={{textAlign: 'center'}}>Hola</Text>
         <Button>Button 1</Button>
         <Card title="Card">
           <p>Card Content</p>
         </Card>
-        <Card title="Card">
-          <p>Card Content</p>
-        </Card>
-        <Card title="Card">
+        <Card title="Card 2">
           <p>Card Content</p>
         </Card>
       </Stack>
       <Stack gap="1rem" direction="row" wrap spacer="|" alignItems='flex-start'>
-        <Text>Hola</Text>
-        <Button>Button 1</Button>
-        <Card title="Card">
-          <p>Card Content</p>
-        </Card>
         <Card title="Card">
           <p>Card Content</p>
         </Card>
@@ -42,11 +34,6 @@ const HomePage = ({ onSearchSubmit, children }) => (
         </Card>
       </Stack>
       <Stack gap="1rem" direction="row" wrap spacer="|" alignItems='flex-end'>
-        <Text>Hola</Text>
-        <Button>Button 1</Button>
-        <Card title="Card">
-          <p>Card Content</p>
-        </Card>
         <Card title="Card">
           <p>Card Content</p>
         </Card>
