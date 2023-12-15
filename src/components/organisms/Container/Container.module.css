@@ -1,0 +1,24 @@
+.Container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "aside footer";
+  grid-template-columns: var(--aside-width,200px) 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100%;
+
+}
+
+@media (max-width: 768px) {
+  .Container {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+  }
+}
