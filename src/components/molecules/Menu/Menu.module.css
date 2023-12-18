@@ -1,0 +1,8 @@
+.Menu {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}

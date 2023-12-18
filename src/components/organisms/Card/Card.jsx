@@ -3,7 +3,7 @@ import CardHeader from '../../molecules/CardHeader/CardHeader';
 import styles from './Card.module.css';
 
 const Card = ({ title, thumbnail, children, style }) => (
-  <div className={styles.Card} style={{ color: 'var(--primary-color)', backgroundColor: 'var(--secondary-color)', borderColor: 'var(--border-color)' , ...style}}>
+  <div className={styles.Card} style={{ ...style}}>
     {(title || thumbnail) && <CardHeader title={title} thumbnail={thumbnail} />}
     <div className={styles.CardBody}>
       {children}
