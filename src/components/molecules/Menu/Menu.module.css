@@ -5,4 +5,28 @@
   padding-left: 0;
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  padding: 10px;
+}
+
+.horizontal {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  border-right: none;
+  height: var(--menu-horizontal-height);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.vertical {
+  display: block;
+  min-width: 200px;
+  min-height: 400px;
+  height: 100%;
+  border-right: 1px solid var(--border-color);
+}
+
+.horizontal > li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
 }

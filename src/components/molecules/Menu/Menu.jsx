@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Menu.module.css';
 
-const Menu = ({children}) => (
-  <ul className={styles.Menu}>
+const Menu = ({mode, children}) => (
+  <ul className={`${styles.Menu} ${styles[mode]}`}>
     {children}
   </ul>
 );

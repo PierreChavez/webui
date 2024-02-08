@@ -10,6 +10,7 @@
     --secondary-light-color: #E4E0EB;
     --emphasis-color-rgb: 250, 29, 78;
     --emphasis-color: rgb(var(--emphasis-color-rgb));
+    --menu-horizontal-height: 50px
 
 }
 
@@ -19,5 +20,6 @@
     --secondary-color: #251F33;
     --secondary-light-color: #3A3350;
     --button-color: #2D283E;
+    --border-color: #423b54;
 
 }

@@ -17,9 +17,13 @@ const PageTemplate = ({ title, children }) => (
         <BreadcrumbItem href='/'>Home</BreadcrumbItem>
         <BreadcrumbItem href='/about'>About</BreadcrumbItem>
       </Breadcrumb>
-      <Menu><MenuItem>Home</MenuItem><MenuItem>About</MenuItem></Menu>
+      <Menu mode="horizontal"><MenuItem>Home</MenuItem><MenuItem>About</MenuItem></Menu>
     </Header>
-    <Aside width='250px'>      <ThemeSwitcher />
+    <Aside width='250px'>
+      <Menu mode="vertical">
+        <ThemeSwitcher />
+        <MenuItem>Home</MenuItem><MenuItem>About</MenuItem>
+        </Menu>
     </Aside>
     <Main>{children}</Main>
     <Footer>footer</Footer>

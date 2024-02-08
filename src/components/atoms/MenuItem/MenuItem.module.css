@@ -1,4 +1,6 @@
 .MenuItem {
   cursor: pointer;
   position: relative;
+  list-style: none;
+  padding: 5px;
 }
