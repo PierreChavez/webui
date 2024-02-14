@@ -4,3 +4,9 @@
   list-style: none;
   padding: 5px;
 }
+
+.MenuItem:focus {
+  outline: none;
+  background-color: var(--emphasis-color);
+  border-radius: 5px; /* Change this to your preferred color */
+}

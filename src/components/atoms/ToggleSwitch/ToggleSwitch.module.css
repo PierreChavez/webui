@@ -38,8 +38,8 @@
 }
 
 input:checked + .slider {
-  background-color: var(--background-color);
-  border: 2px solid var(--emphasis-color);
+  background-color: var(--emphasis-color);
+  border: 2px solid var(--border-color);
 
 }
 

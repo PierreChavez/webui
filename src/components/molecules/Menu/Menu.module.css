@@ -19,9 +19,6 @@
 
 .vertical {
   display: block;
-  min-width: 200px;
-  min-height: 400px;
-  height: 100%;
   border-right: 1px solid var(--border-color);
 }
 

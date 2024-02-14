@@ -1,3 +1,4 @@
 .Aside {
   grid-area: aside;
+  overflow-y: auto;
 }

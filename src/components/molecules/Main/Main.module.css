@@ -1,4 +1,4 @@
 .Main {
   grid-area: main;
-  padding: 10px;
+  overflow-y: auto;
 }
